@@ -1,8 +1,10 @@
-execute pathogen#infect()
 
-set guifont=Inconsolata:h14
+set encoding=utf8
+set guifont=Inconsolata\ Nerd\ Font:h14
 
 set nocompatible
+
+execute pathogen#infect()
 
 set backspace=indent,eol,start
 
