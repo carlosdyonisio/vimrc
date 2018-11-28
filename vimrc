@@ -124,7 +124,7 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore *~ -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
+  let g:ctrlp_use_caching = 1
 endif
 
 
@@ -153,7 +153,7 @@ let g:lightline = {
       \ 'colorscheme': 'one',
       \ }
 map <C-o> :NERDTreeToggle<CR>
-let NERDTreeWinSize = 20
+let NERDTreeWinSize = 32
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
